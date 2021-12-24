@@ -69,7 +69,7 @@ if a == '5':
     
 if a == '6':
     rr = realbitcoin()
-    listadf.append(str(round(float(rr), 2)))
+    listadf.append(str(rr))
 
 dffinal = pd.DataFrame(listadf)
 dffinal.to_csv('C:\\teste\\victor\\API-de-moedas\\historico.csv')
