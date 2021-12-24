@@ -34,9 +34,6 @@ def euroreal():
 def realbitcoin():
     real = float(input('Digite um Valor:'))
     print('O Real para Bitcoin na cotação atual é de:', real/bitcoin)
-    vl = real/bitcoin
-
-    return vl
 
 def bitcoinreal():
     real = float(input('Digite um Valor:'))
@@ -52,17 +49,21 @@ print('6 - Para converter de Real Para Bitcoin')
 
 a = input('Escolha sua função:')
 if a == '1':
-    realdolar()
-    listadf.append(str(realdolar))
+    rr = realdolar()
+    listadf.append(str(rr))
+
 if a == '2':
-    dolarreal()
-    listadf.append(str(dolarreal))
+    rr = dolarreal()
+    listadf.append(str(rr))
+
 if a == '3':
-    realeuro()
-    listadf.append(str(realeuro))
+    rr = realeuro()
+    listadf.append(str(rr))
+
 if a == '4':
-    euroreal()
-    listadf.append(str(euroreal))
+    rr = euroreal()
+    listadf.append(str(rr))
+
 if a == '5':
     rr = bitcoinreal()
     listadf.append(str(rr))
